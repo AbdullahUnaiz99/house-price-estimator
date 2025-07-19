@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "house-price-estimator"
+version = "0.0.1"
+authors = [
+  { name="AbdullahUnaiz99", email="abdlearn99@gmail.com" },
+]
+description = "A project to estimate house prices."
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "xgboost",
+    "fastapi",
+    "uvicorn",
+    "streamlit",
+    "requests",
+    "python-multipart",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]  # Look in the root directory for packages
+include = ["model*", "server*", "frontend*"]  # Include these packages and any sub-packages
