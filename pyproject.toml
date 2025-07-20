@@ -25,4 +25,4 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["."]  # Look in the root directory for packages
-include = ["model*", "server*", "frontend*"]  # Include these packages and any sub-packages
+include = ["model*", "server*", "frontend*"]  
